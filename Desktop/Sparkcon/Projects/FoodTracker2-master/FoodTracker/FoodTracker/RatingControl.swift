@@ -1,9 +1,9 @@
 //
 //  RatingControl.swift
-//  FoodTracker2
+//  FoodTracker
 //
-//  Created by Ricky Sparks on 2/22/20.
-//  Copyright © 2020 Ricky Sparks. All rights reserved.
+//  Created by Jane Appleseed on 11/2/16.
+//  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
 import UIKit
@@ -46,8 +46,8 @@ import UIKit
     
     //MARK: Button Action
     
-    @objc func ratingButtonTapped(button: UIButton) {
-        guard let index = ratingButtons.firstIndex(of: button) else {
+    func ratingButtonTapped(button: UIButton) {
+        guard let index = ratingButtons.index(of: button) else {
             fatalError("The button, \(button), is not in the ratingButtons array: \(ratingButtons)")
         }
         
